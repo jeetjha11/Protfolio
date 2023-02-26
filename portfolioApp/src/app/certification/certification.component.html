@@ -1,0 +1,21 @@
+<div class="container">
+
+    <h1>Certifications</h1>
+
+    <ul>
+        <li *ngFor="let certification of certificationList">
+            <h2>{{certification.name}}</h2>
+            <h3>{{certification.place}}</h3>
+            <h4>{{certification.duration}}</h4>
+            <ul>
+                <li *ngFor="let desc of certification.description">
+                    {{desc}}
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+
+
+
+</div>
